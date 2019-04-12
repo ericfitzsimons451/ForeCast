@@ -1,18 +1,19 @@
-import { allPurposeFetch } from '../Helpers/AllPurposeFetch'
-import { isLoading, hasError, setCityWeather} from '../Actions/index'
+import { isLoading, hasError, setCityWeather } from '../Actions/'
 
 export const getCityWeather = (url) => {
     return async (dispatch) => {
         try {
             dispatch(isLoading(true))
-            const response = await allPurposeFetch(url)
-            if (!response.data) {
-                throw new Error(response.statusText)
+            const response = await fetch(url)
+            if (!response.ok) {
+                throw Error(response.statusText)
             }
+            const data = await response.json()
             dispatch(isLoading(false))
-            dispatch(setCityWeather(response.data))
+            dispatch(setCityWeather(data))
         } catch (error) {
             dispatch(hasError(error.message))
         }
     }
 }
+
