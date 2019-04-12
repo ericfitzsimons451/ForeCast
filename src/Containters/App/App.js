@@ -18,11 +18,10 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    this.getCityWeather()
   }
 
-  getCityWeather = async () => {
-    const url = `https://api.weatherbit.io/v2.0/current?city=Raleigh,NC&key=${weatherApiKey}`
+  getCityWeather = async (cityName) => {
+    const url = `https://api.weatherbit.io/v2.0/current?city=${cityName}&key=${weatherApiKey}`
     const cityWeather = await allPurposeFetch(url)
     console.log(cityWeather)
   }
