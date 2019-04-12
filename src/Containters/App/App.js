@@ -1,30 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
 import { weatherApiKey } from '../../Helpers/weatherApiKey'
-import { allPurposeFetch } from '../../Helpers/AllPurposeFetch'
 import { Route } from 'react-router-dom'
 import Header from '../../Components/Header/Header'
 import Welcome from '../../Components/Welcome/Welcome'
 import SearchForm from '../../Containters/SearchForm/SearchForm'
+import { connect } from 'react-redux'
+import { getCityWeather } from '../../Thunks/getCityWeather'
 
 class App extends Component {
-  constructor() {
-    super()
-    this.state = {
-      characters: [],
-      isLoading: false,
-      errorMsg: ''
-    }
-  }
-
+ 
   async componentDidMount() {
-    this.getCityWeather()
   }
 
-  getCityWeather = async () => {
-    const url = `https://api.weatherbit.io/v2.0/current?city=Raleigh,NC&key=${weatherApiKey}`
-    const cityWeather = await allPurposeFetch(url)
-    console.log(cityWeather)
+  getCityWeather = async (cityName) => {
+    const url = `https://api.weatherbit.io/v2.0/current?city=${cityName}&key=${weatherApiKey}`
+    this.props.getCityWeather(url)
   }
 
   render() {
@@ -38,4 +29,14 @@ class App extends Component {
   }
 }
 
-export default App;
+export const mapDispatchToProps = (dispatch) => ({
+  getCityWeather: url => dispatch(getCityWeather(url))
+})
+
+export const mapStateToProps = (state) => ({
+  isLoading: state.isLoading,
+  hasError: state.hasError,
+  currentWeather: state.currentWeather
+})
+
+export default connect(null, mapDispatchToProps)(App);
