@@ -9,9 +9,6 @@ import { connect } from 'react-redux'
 import { getCityWeather } from '../../Thunks/getCityWeather'
 
 class App extends Component {
- 
-  async componentDidMount() {
-  }
 
   getCityWeather = (cityName) => {
     const url = `https://api.weatherbit.io/v2.0/current?city=${cityName}&key=${weatherApiKey}`

@@ -5,7 +5,7 @@ export class SearchForm extends Component {
 	constructor() {
 		super()
 		this.state = {
-			searchInfo: ''
+			searchInfo: '',
 		}
 	}
 

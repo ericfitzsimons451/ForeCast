@@ -1,10 +1,10 @@
 import React from 'react'
-import Welcome from './Welcome'
+import Header from './Header'
 import { shallow } from 'enzyme'
 
-describe('Welcome', () => {
+describe('Header', () => {
     it('should match the snapshot', () => {
-        let wrapper = shallow(<Welcome />)
+        let wrapper = shallow(<Header />)
         expect(wrapper).toMatchSnapshot()
     })
 })

@@ -2,7 +2,7 @@ import React from 'react'
 import './Welcome.scss'
 import { NavLink } from 'react-router-dom'
 
-export const Welcome = ({ searchWeather }) => {
+export const Welcome = () => {
     return (
         <div className="welcome">
             <h2>Thank you for choosing ForeCast!</h2>
