@@ -39,4 +39,4 @@ export const mapStateToProps = (state) => ({
   currentWeather: state.currentWeather
 })
 
-export default connect(null, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
