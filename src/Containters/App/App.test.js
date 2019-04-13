@@ -1,5 +1,7 @@
 import React from 'react'
-import { App, mapStateToProps } from './App'
+import { App, mapStateToProps, mapDispatchToProps } from './App'
+import { getCityWeather } from '../../Thunks/getCityWeather'
+jest.mock('../../Thunks/getCityWeather')
 
 describe('App', () => {
   describe('mapStateToProps', () => {
@@ -18,5 +20,14 @@ describe('App', () => {
       const newState = mapStateToProps(updatedState)
       expect(newState).toEqual(updatedState)
     })
+  })
+
+  it('should dispatch getCityWeather via the props object', () => {
+    const mockDispatch = jest.fn()
+    const mockUrl = 'www.url.com'
+    const actionToDispatch = getCityWeather(mockUrl)
+    const mappedProps = mapDispatchToProps(mockDispatch)
+    mappedProps.getCityWeather(mockUrl)
+    expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch)
   })
 })
