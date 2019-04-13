@@ -13,7 +13,7 @@ class App extends Component {
   async componentDidMount() {
   }
 
-  getCityWeather = async (cityName) => {
+  getCityWeather = (cityName) => {
     const url = `https://api.weatherbit.io/v2.0/current?city=${cityName}&key=${weatherApiKey}`
     this.props.getCityWeather(url)
   }
