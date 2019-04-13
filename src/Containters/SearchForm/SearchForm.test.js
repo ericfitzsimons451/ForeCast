@@ -33,14 +33,17 @@ describe('searchForm', () => {
         })
     })
 
-    // describe('handleSubmit', () => {
-    //     it('updates calls a props function', () => {
-    //         wrapper = shallow(<SearchForm getCityWeather={jest.fn}/>)
-    //         const mockEvent = { preventDefault: jest.fn() }
-    //         const mockState = {
-    //             searchInfo: 'Raleigh'
-    //         }
-    //         wrapper.instance().props.getCityWeather(mockState)
-    //     })
-    // })
+    describe('handleSubmit', () => {
+        it('updates calls a props function and resets state', () => {
+            const mockFunc = jest.fn()
+            let wrapper = shallow(<SearchForm getCityWeather={mockFunc}/>)
+            const mockEvent = { preventDefault: jest.fn() }
+            // const mockState = {
+            //     searchInfo: 'Raleigh'
+            // }
+            wrapper.instance().handleSubmit(mockEvent)
+            // expect(wrapper.instance().props.getCityWeather()).toHaveBeenCalledWith(mockState)
+            expect(wrapper.state()).toEqual({searchInfo: ''})
+        })
+    })
 })

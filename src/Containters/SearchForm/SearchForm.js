@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './SearchForm.scss'
+import PropTypes from 'prop-types'
 
 export class SearchForm extends Component {
 	constructor() {
@@ -29,5 +30,10 @@ export class SearchForm extends Component {
 		)
 	}
 }
+
+SearchForm.propTypes = {
+	getCityWeather: PropTypes.func
+}
+
 
 export default SearchForm
