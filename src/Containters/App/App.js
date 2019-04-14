@@ -5,7 +5,6 @@ import { Route } from 'react-router-dom'
 import Header from '../../Components/Header/Header'
 import Welcome from '../../Components/Welcome/Welcome'
 import SearchForm from '../../Containters/SearchForm/SearchForm'
-import City from '../../Components/City/City'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { getCityWeather } from '../../Thunks/getCityWeather'
@@ -27,10 +26,9 @@ export class App extends Component {
         <Header />
         <Route exact path='/' render={() => <Welcome />} />
         <Route exact path='/search' render={() => <SearchForm getCityWeather={this.getCityWeather} /> } />
-        {/* <Route path='/cities' render={() => <WeatherContainer /> } /> */}
         <Route exact path='/cities/:id' render={({match}) => {
-        return <WeatherContainer id={match.params} {...this.props.currentWeather} />
-        }} />
+          return <WeatherContainer id={match.params} {...this.props.currentWeather} />
+          }} />
       </div>
     );
   }

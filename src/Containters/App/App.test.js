@@ -9,19 +9,21 @@ describe('App', () => {
   beforeEach(() => {
     wrapper = shallow(<App />)
   })
+
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  describe('getCityWeather', () => {
-    it('should take in a city name and call props.getCityWeather with the url/cityName', () => {
-      const mockCityName = 'Denver'
-      const weatherApiKey = 230232
-      const mockUrl = `https://api.weatherbit.io/v2.0/current?city=${mockCityName}&key=${weatherApiKey}`
-      wrapper.instance().getCityWeather(mockCityName)
-      // expect(wrapper.instance().props.getCityWeather).toHaveBeenCalledWith(mockUrl)
-    })
-  })
+  // describe('getCityWeather', () => {
+  //   it('should take in a city name and call props.getCityWeather with the url/cityName', () => {
+  //     const mockCityName = 'Denver'
+  //     const wrapper = shallow(<App />)
+  //     // const weatherApiKey = 230232
+  //     // const mockUrl = `https://api.weatherbit.io/v2.0/current?city=${mockCityName}&key=${weatherApiKey}`
+  //     wrapper.instance().getCityWeather(mockCityName) = jest.fn()
+  //     // expect(wrapper.instance().props.getCityWeather).toHaveBeenCalledWith(mockUrl)
+  //   })
+  // })
   
   describe('mapStateToProps', () => {
     it('should mapStateToProps', () => {
