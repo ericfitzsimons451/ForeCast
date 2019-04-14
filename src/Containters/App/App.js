@@ -23,7 +23,7 @@ export class App extends Component {
         <Header />
         <Route path='/' render={() => <Welcome />} />
         <SearchForm getCityWeather={this.getCityWeather} />
-        {/* <WeatherContainer /> */}
+        <WeatherContainer />
       </div>
     );
   }
