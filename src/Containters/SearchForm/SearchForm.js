@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './SearchForm.scss'
+import { PropTypes } from 'prop-types'
+import { Link } from 'react-router-dom'
 
 export class SearchForm extends Component {
 	constructor() {
@@ -15,7 +17,7 @@ export class SearchForm extends Component {
 	}
 
 	handleSubmit = (e) => {
-		e.preventDefault()
+		// e.preventDefault()
 		this.props.getCityWeather(this.state.searchInfo)
 		this.setState({ searchInfo: '' })
 	}
@@ -24,10 +26,15 @@ export class SearchForm extends Component {
 		return (
 			<form>
 				<input onChange={this.handleChange} name='searchInfo' value={this.state.searchInfo} />
-				<button onClick={this.handleSubmit}>Submit</button>
+				<Link to={`/cities/${this.state.searchInfo}`} onClick={this.handleSubmit}>Get Current Weather</Link>
 			</form>
 		)
 	}
 }
+
+SearchForm.propTypes = {
+	getCityWeather: PropTypes.func
+}
+
 
 export default SearchForm
