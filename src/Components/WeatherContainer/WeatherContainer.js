@@ -8,10 +8,9 @@ export class WeatherContainer extends Component {
     render() {
         return(
             <div className='weather-container'>
-                <City key={Date.now()} weather={this.props.currentWeather} />
+                <City key={23} weather={this.props.currentWeather} />
             </div>
         )
-      
     }
 }
 

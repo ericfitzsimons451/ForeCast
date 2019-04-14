@@ -26,7 +26,7 @@ ShallowWrapper {
           Your daily weather is just a few clicks away!
         </h3>,
         <NavLink
-          to="/seach"
+          to="/search"
         >
           Search By City
         </NavLink>,
@@ -63,7 +63,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": "Search By City",
-          "to": "/seach",
+          "to": "/search",
         },
         "ref": null,
         "rendered": "Search By City",
@@ -86,7 +86,7 @@ ShallowWrapper {
             Your daily weather is just a few clicks away!
           </h3>,
           <NavLink
-            to="/seach"
+            to="/search"
           >
             Search By City
           </NavLink>,
@@ -123,7 +123,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": "Search By City",
-            "to": "/seach",
+            "to": "/search",
           },
           "ref": null,
           "rendered": "Search By City",
