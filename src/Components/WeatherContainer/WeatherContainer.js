@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './WeatherContainer.scss'
 import City from '../City/City'
 import { connect } from 'react-redux'
+import { PropTypes } from 'prop-types'
 
 export class WeatherContainer extends Component {
 
@@ -12,6 +13,10 @@ export class WeatherContainer extends Component {
             </div>
         )
     }
+}
+
+WeatherContainer.propTypes = {
+    currentWeather: PropTypes.object
 }
 
 export const mapStateToProps = state => ({

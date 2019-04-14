@@ -1,6 +1,7 @@
 import React from 'react'
 import './City.scss'
 import { Link } from 'react-router-dom'
+import { PropTypes } from 'prop-types'
 
 export const City = ({weather}) => {
     if (weather.weather) {
@@ -21,6 +22,9 @@ export const City = ({weather}) => {
             <div>Loading, please wait...</div>
         )
     }
+}
+City.propTypes = {
+    weather: PropTypes.object
 }
 
 export default City
