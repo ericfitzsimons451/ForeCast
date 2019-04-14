@@ -7,7 +7,7 @@ export const Welcome = () => {
         <div className="welcome">
             <h2>Thank you for choosing ForeCast!</h2>
             <h3>Your daily weather is just a few clicks away!</h3>
-            <NavLink to='/seach'>Search By City</NavLink>
+            <NavLink to='/search'>Search By City</NavLink>
         </div>
     )
 }

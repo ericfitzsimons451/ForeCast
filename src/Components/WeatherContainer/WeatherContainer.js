@@ -4,11 +4,14 @@ import City from '../City/City'
 import { connect } from 'react-redux'
 
 export class WeatherContainer extends Component {
-    
+
     render() {
-        return (
-            <City weather={this.props.currentWeather} />
+        return(
+            <div className='weather-container'>
+                <City key={Date.now()} weather={this.props.currentWeather} />
+            </div>
         )
+      
     }
 }
 
