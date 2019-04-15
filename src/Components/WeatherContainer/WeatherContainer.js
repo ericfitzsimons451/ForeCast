@@ -6,21 +6,21 @@ import { PropTypes } from 'prop-types'
 
 export class WeatherContainer extends Component {
 
-    render() {
-        return(
-            <div className='weather-container'>
-                <City key={23} weather={this.props.currentWeather} />
-            </div>
-        )
-    }
+	render() {
+		return (
+			<div className='weather-container'>
+				<City key={this.props.currentWeather.city_name} currentWeather={this.props.currentWeather} />
+			</div>
+		)
+	}
 }
 
 WeatherContainer.propTypes = {
-    currentWeather: PropTypes.object
+	currentWeather: PropTypes.object
 }
 
 export const mapStateToProps = state => ({
-    currentWeather: state.currentWeather
+	currentWeather: state.currentWeather
 })
 
 export default connect(mapStateToProps)(WeatherContainer)
