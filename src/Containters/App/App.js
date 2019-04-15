@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../../SCSS/Main.scss';
 import { Route, Switch } from 'react-router-dom'
 import Header from '../../Components/Header/Header'
 import Welcome from '../../Components/Welcome/Welcome'

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Welcome.scss'
+import '../../SCSS/Main.scss'
 import { NavLink } from 'react-router-dom'
 
 export const Welcome = () => {

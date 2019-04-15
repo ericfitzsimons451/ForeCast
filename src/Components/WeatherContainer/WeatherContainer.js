@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './WeatherContainer.scss'
+import '../../SCSS/Main.scss'
 import City from '../City/City'
 import { connect } from 'react-redux'
 import { PropTypes } from 'prop-types'

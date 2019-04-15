@@ -1,5 +1,5 @@
 import React from 'react'
-import './City.scss'
+import '../../SCSS/Main.scss'
 import { Link } from 'react-router-dom'
 import { PropTypes } from 'prop-types'
 
