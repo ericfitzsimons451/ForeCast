@@ -10,7 +10,6 @@ exports[`WeatherContainer should match the snapshot 1`] = `
         "city": "Denver",
       }
     }
-    key="23"
   />
 </div>
 `;

@@ -19,7 +19,7 @@ export class SearchForm extends Component {
 		this.setState({ [name]: value })
 	}
 
-	handleGetCityWeather = (e) => {
+	handleGetCityWeather = () => {
 		const cityName = this.state.searchInfo
 		const url = `https://api.weatherbit.io/v2.0/current?city=${cityName}&key=${weatherApiKey}`
 		this.props.getCityWeather(url)

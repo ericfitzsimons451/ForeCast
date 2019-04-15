@@ -1,8 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`City should match the snapshot if data is passed down 1`] = `
-<div>
-  Loading, please wait...
+<div
+  className="card"
+>
+  <h2 />
+  <h3>
+    Temperature: 
+    NaN
+     F
+  </h3>
+  <h3>
+    Relative Humidity: 
+     %
+  </h3>
+  <h3>
+    Description: 
+  </h3>
+  <h3>
+    Cloud Coverage: 
+    %
+  </h3>
+  <h3>
+    Sunrise: 
+  </h3>
+  <h3>
+    Sunset: 
+  </h3>
+  <Link
+    to="/search"
+  >
+    Return
+  </Link>
 </div>
 `;
 
