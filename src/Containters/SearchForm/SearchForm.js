@@ -24,8 +24,10 @@ export class SearchForm extends Component {
 	render() {
 		return (
 			<form className='search'>
-				<input onChange={this.handleChange} name='searchInfo' value={this.state.searchInfo} placeholder='Search any US city' className='input'/>
-				<Link to={`/cities/${this.state.searchInfo}`} onClick={this.handleSubmit}>Get Current Weather</Link>
+				<div className='search-box'>
+					<input onChange={this.handleChange} name='searchInfo' value={this.state.searchInfo} placeholder='Search any US city' className='input'/>
+					<Link to={`/cities/${this.state.searchInfo}`} onClick={this.handleSubmit} className='submit-btn'>Get Current Weather</Link>
+				</div>
 			</form>
 		)
 	}

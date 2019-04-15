@@ -18,80 +18,49 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
-        <h2>
+      "children": <div
+        className="welcome-text"
+      >
+        <h2
+          className="welcome-msg"
+        >
           Thank you for choosing ForeCast!
-        </h2>,
+        </h2>
         <h3>
           Your daily weather is just a few clicks away!
-        </h3>,
+        </h3>
         <NavLink
+          className="link"
           to="/search"
         >
           Search By City
-        </NavLink>,
-      ],
+        </NavLink>
+      </div>,
       "className": "welcome",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Thank you for choosing ForeCast!",
-        },
-        "ref": null,
-        "rendered": "Thank you for choosing ForeCast!",
-        "type": "h2",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Your daily weather is just a few clicks away!",
-        },
-        "ref": null,
-        "rendered": "Your daily weather is just a few clicks away!",
-        "type": "h3",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "children": "Search By City",
-          "to": "/search",
-        },
-        "ref": null,
-        "rendered": "Search By City",
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h2>
+          <h2
+            className="welcome-msg"
+          >
             Thank you for choosing ForeCast!
           </h2>,
           <h3>
             Your daily weather is just a few clicks away!
           </h3>,
           <NavLink
+            className="link"
             to="/search"
           >
             Search By City
           </NavLink>,
         ],
-        "className": "welcome",
+        "className": "welcome-text",
       },
       "ref": null,
       "rendered": Array [
@@ -101,6 +70,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Thank you for choosing ForeCast!",
+            "className": "welcome-msg",
           },
           "ref": null,
           "rendered": "Thank you for choosing ForeCast!",
@@ -123,6 +93,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": "Search By City",
+            "className": "link",
             "to": "/search",
           },
           "ref": null,
@@ -130,6 +101,101 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="welcome-text"
+        >
+          <h2
+            className="welcome-msg"
+          >
+            Thank you for choosing ForeCast!
+          </h2>
+          <h3>
+            Your daily weather is just a few clicks away!
+          </h3>
+          <NavLink
+            className="link"
+            to="/search"
+          >
+            Search By City
+          </NavLink>
+        </div>,
+        "className": "welcome",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2
+              className="welcome-msg"
+            >
+              Thank you for choosing ForeCast!
+            </h2>,
+            <h3>
+              Your daily weather is just a few clicks away!
+            </h3>,
+            <NavLink
+              className="link"
+              to="/search"
+            >
+              Search By City
+            </NavLink>,
+          ],
+          "className": "welcome-text",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Thank you for choosing ForeCast!",
+              "className": "welcome-msg",
+            },
+            "ref": null,
+            "rendered": "Thank you for choosing ForeCast!",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Your daily weather is just a few clicks away!",
+            },
+            "ref": null,
+            "rendered": "Your daily weather is just a few clicks away!",
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Search By City",
+              "className": "link",
+              "to": "/search",
+            },
+            "ref": null,
+            "rendered": "Search By City",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
       "type": "div",
     },
   ],

@@ -20,70 +20,49 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": Array [
+      "children": <div
+        className="search-box"
+      >
         <input
+          className="input"
           name="searchInfo"
           onChange={[Function]}
+          placeholder="Search any US city"
           value=""
-        />,
+        />
         <Link
+          className="submit-btn"
           onClick={[Function]}
           to="/cities/"
         >
           Get Current Weather
-        </Link>,
-      ],
+        </Link>
+      </div>,
+      "className": "search",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "name": "searchInfo",
-          "onChange": [Function],
-          "value": "",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "input",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": "Get Current Weather",
-          "onClick": [Function],
-          "to": "/cities/",
-        },
-        "ref": null,
-        "rendered": "Get Current Weather",
-        "type": [Function],
-      },
-    ],
-    "type": "form",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
           <input
+            className="input"
             name="searchInfo"
             onChange={[Function]}
+            placeholder="Search any US city"
             value=""
           />,
           <Link
+            className="submit-btn"
             onClick={[Function]}
             to="/cities/"
           >
             Get Current Weather
           </Link>,
         ],
+        "className": "search-box",
       },
       "ref": null,
       "rendered": Array [
@@ -92,8 +71,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "className": "input",
             "name": "searchInfo",
             "onChange": [Function],
+            "placeholder": "Search any US city",
             "value": "",
           },
           "ref": null,
@@ -106,6 +87,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": "Get Current Weather",
+            "className": "submit-btn",
             "onClick": [Function],
             "to": "/cities/",
           },
@@ -114,6 +96,94 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
+      "type": "div",
+    },
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="search-box"
+        >
+          <input
+            className="input"
+            name="searchInfo"
+            onChange={[Function]}
+            placeholder="Search any US city"
+            value=""
+          />
+          <Link
+            className="submit-btn"
+            onClick={[Function]}
+            to="/cities/"
+          >
+            Get Current Weather
+          </Link>
+        </div>,
+        "className": "search",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <input
+              className="input"
+              name="searchInfo"
+              onChange={[Function]}
+              placeholder="Search any US city"
+              value=""
+            />,
+            <Link
+              className="submit-btn"
+              onClick={[Function]}
+              to="/cities/"
+            >
+              Get Current Weather
+            </Link>,
+          ],
+          "className": "search-box",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "input",
+              "name": "searchInfo",
+              "onChange": [Function],
+              "placeholder": "Search any US city",
+              "value": "",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "input",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Get Current Weather",
+              "className": "submit-btn",
+              "onClick": [Function],
+              "to": "/cities/",
+            },
+            "ref": null,
+            "rendered": "Get Current Weather",
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
       "type": "form",
     },
   ],
