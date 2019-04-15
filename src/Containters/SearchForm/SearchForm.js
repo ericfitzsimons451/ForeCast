@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import './SearchForm.scss'
 import { PropTypes } from 'prop-types'
+import { weatherApiKey } from '../../Helpers/weatherApiKey'
 import { Link } from 'react-router-dom'
+import { getCityWeather } from '../../Thunks/getCityWeather'
+import { connect } from 'react-redux'
 
 export class SearchForm extends Component {
 	constructor() {
@@ -16,8 +19,10 @@ export class SearchForm extends Component {
 		this.setState({ [name]: value })
 	}
 
-	handleSubmit = (e) => {
-		this.props.getCityWeather(this.state.searchInfo)
+	handleGetCityWeather = (e) => {
+		const cityName = this.state.searchInfo
+		const url = `https://api.weatherbit.io/v2.0/current?city=${cityName}&key=${weatherApiKey}`
+		this.props.getCityWeather(url)
 		this.setState({ searchInfo: '' })
 	}
 
@@ -25,17 +30,30 @@ export class SearchForm extends Component {
 		return (
 			<form className='search'>
 				<div className='search-box'>
-					<input onChange={this.handleChange} name='searchInfo' value={this.state.searchInfo} placeholder='Search any US city' className='input'/>
-					<Link to={`/cities/${this.state.searchInfo}`} onClick={this.handleSubmit} className='submit-btn'>Get Current Weather</Link>
+					<input
+						onChange={this.handleChange}
+						name='searchInfo' value={this.state.searchInfo}
+						placeholder='Search any US city'
+						className='input'
+					/>
+					<Link
+						to={`/cities/${this.state.searchInfo}`}
+						onClick={this.handleGetCityWeather}
+						className='submit-btn'>Get Current Weather
+					</Link>
 				</div>
 			</form>
 		)
 	}
 }
 
+export const mapDispatchToProps = dispatch => ({
+	getCityWeather: (url) => dispatch(getCityWeather(url))
+})
+
 SearchForm.propTypes = {
 	getCityWeather: PropTypes.func
 }
 
 
-export default SearchForm
+export default connect(null, mapDispatchToProps)(SearchForm)
