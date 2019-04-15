@@ -34,7 +34,6 @@ export const mapStateToProps = (state) => ({
 })
 
 App.propTypes = {
-  getCityWeather: PropTypes.func,
   isLoading: PropTypes.bool,
   hasError: PropTypes.string,
   currentWeather: PropTypes.object
