@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './SearchForm.scss'
+import '../../SCSS/Main.scss'
 import { PropTypes } from 'prop-types'
 import { weatherApiKey } from '../../Helpers/weatherApiKey'
 import { Link } from 'react-router-dom'
