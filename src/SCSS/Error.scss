@@ -1,0 +1,32 @@
+.error-container {
+  background: url('https://www.chubmagazine.com/wp-content/uploads/2017/10/Greengrass.jpg');
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.error-display {
+  background: rgba(169, 176, 168, 0.815);
+	width: 50vw;
+	height: 45vh;
+	margin-top: 30px;
+	opacity: 1;
+	border-radius: 15px;
+}
+
+.error {
+  font-size: 2rem;
+	margin: 55px 25px 50px 25px;
+}
+
+.link-home {
+	border: 1px solid black;
+	border-radius: 15px;
+	width: 30vw;
+	height: 50px;
+	font-size: 1.8rem;
+	padding: 20px;
+	text-decoration: none;
+}

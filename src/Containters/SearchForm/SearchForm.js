@@ -39,7 +39,7 @@ export class SearchForm extends Component {
 					<Link
 						to={`/cities/${this.state.searchInfo}`}
 						onClick={this.handleGetCityWeather}
-						className='submit-btn'>Get Current Weather
+						className='link-tag'>Get Current Weather
 					</Link>
 				</div>
 			</form>

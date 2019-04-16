@@ -1,22 +1,36 @@
 .card {
-	// display: flex;
-	// flex-direction: column;
-	// align-items: center;
-	// justify-content: center;
-	border: solid 1px red;
-	background: #fff;
-	border-radius: 10px;
-	max-height: 50vh;
-	width: 55vw;
-	margin: 40px;
-	padding: 5px;
+	background: rgba(169, 176, 168, 0.815);
+	width: 50vw;
+	height: 55vh;
+	margin-top: 30px;
+	border-radius: 15px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	h3 {
-		font-size: 1rem;
+		font-size: 1.4rem;
+		margin: 10px;
 	}
 	a {
 		&:hover {
 			cursor: pointer;
 		}
 	}
+}
+
+.name {
+	font-size: 2rem;
+	margin: 10px;
+}
+
+.link-return {
+	border: 1px solid black;
+	border-radius: 15px;
+	width: 30vw;
+	height: 30px;
+	font-size: 1.8rem;
+	padding: 20px;
+	text-decoration: none;
 }
 
