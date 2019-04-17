@@ -1,24 +1,58 @@
 .search {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
 	background: url('https://www.chubmagazine.com/wp-content/uploads/2017/10/Greengrass.jpg');
-	background-repeat: no-repeat;
 	min-height: 100vh;
-}
-
-.input {
-	width: 25vw;
+	min-width: 100vw;
 }
 
 .search-box {
-	border-radius: 15px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
-	width: 35vw;
-	height: 35vh;
-	background: #fff;
+	background: rgba(169, 176, 168, 0.815);
+	width: 50vw;
+	height: 45vh;
+	margin-top: 30px;
+	opacity: 1;
+	border-radius: 15px;
+}
+
+.input {
+	width: 30vw;
+	height: 8vh;
+	font-size: 1.2rem;
+	border-radius: 10px;
+	margin: 40px;
+}
+
+.link-tag {
+	border: 1px solid black;
+	border-radius: 15px;
+	width: 30vw;
+	height: 50px;
+	font-size: 1.8rem;
+	padding: 20px;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 590px) {
+	.link-tag {
+		font-size: 1.7rem;
+	}
+	.input::placeholder {
+		font-size: 1.1rem;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.link-tag {
+		font-size: 1.4rem;
+	}
+	.input::placeholder {
+		font-size: .9rem;
+	}
 }

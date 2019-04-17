@@ -4,9 +4,43 @@
 	width: 100vw;
 	background-repeat: no-repeat;
 	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: solid rgb(0, 0, 0) 3px;
 }
 
 .title {
-	margin-top: 0;
-	padding-top: 30px;
+	font-size: 3.5rem;
+	text-decoration: underline;
+	border: solid 1px;
+	border-radius: 10px;
+	width: 35%;
+	height: 50%;
+	opacity: .7;
+	background: rgb(121, 177, 220);
+	padding: 10px;
+}
+
+@media only screen and (max-width: 715px) {
+	.title {
+		font-size: 3rem;
+		padding: 5px;
+	}
+}
+
+@media only screen and (max-width: 615px) {
+	.title {
+		font-size: 2.5rem;
+		padding: 5px;
+		height: 38%;
+	}
+}
+
+@media only screen and (max-width: 525px) {
+	.title {
+		font-size: 2.3rem;
+		padding: 5px;
+		height: 40%;
+	}
 }
