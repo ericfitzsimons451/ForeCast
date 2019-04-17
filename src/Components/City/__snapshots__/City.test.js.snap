@@ -4,13 +4,17 @@ exports[`City should match the snapshot if data is passed down 1`] = `
 <div
   className="card"
 >
-  <h2 />
+  <h2
+    className="name"
+  />
   <h3>
     Temperature: 
     NaN
      F
   </h3>
-  <h3>
+  <h3
+    className="humidity"
+  >
     Relative Humidity: 
      %
   </h3>
@@ -19,7 +23,7 @@ exports[`City should match the snapshot if data is passed down 1`] = `
   </h3>
   <h3>
     Cloud Coverage: 
-    %
+     %
   </h3>
   <h3>
     Sunrise: 
@@ -28,15 +32,27 @@ exports[`City should match the snapshot if data is passed down 1`] = `
     Sunset: 
   </h3>
   <Link
+    className="link-return"
     to="/search"
   >
-    Return
+    Search Again
   </Link>
 </div>
 `;
 
 exports[`City should match the snapshot if there is no data 1`] = `
-<div>
-  Loading, please wait...
+<div
+  className="card"
+>
+  <h3
+    className="name"
+  >
+    Loading
+  </h3>
+  <h3
+    classNam="name"
+  >
+    Please wait
+  </h3>
 </div>
 `;

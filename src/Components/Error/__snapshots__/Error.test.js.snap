@@ -1,14 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Error should match the snapshot 1`] = `
-<div>
-  <h3>
-    Error 404  File Not Found
-  </h3>
-  <NavLink
-    to="/search"
+<div
+  className="error-container"
+>
+  <div
+    className="error-display"
   >
-    Search Again
-  </NavLink>
+    <h3
+      className="error"
+    >
+      Error 404  File Not Found
+    </h3>
+    <NavLink
+      className="link-home"
+      to="/search"
+    >
+      Search Again
+    </NavLink>
+  </div>
 </div>
 `;
