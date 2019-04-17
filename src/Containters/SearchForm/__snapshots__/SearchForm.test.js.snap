@@ -15,7 +15,7 @@ exports[`searchForm should match the snapshot 1`] = `
       value=""
     />
     <Link
-      className="submit-btn"
+      className="link-tag"
       onClick={[Function]}
       to="/cities/"
     >
