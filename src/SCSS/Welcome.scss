@@ -19,7 +19,7 @@
 
 .welcome-thanks {
 	font-size: 2.5rem;
-	margin: 10px;
+	margin: 40px 10px;
 }
 
 .welcome-suggestion {
@@ -42,6 +42,12 @@
 	}
 	.welcome-suggestion {
 		font-size: 1.65rem;
+	}
+}
+
+@media only screen and (max-width: 670px) {
+	.welcome-thanks {
+		margin: 20px;
 	}
 }
 
