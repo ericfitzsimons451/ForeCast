@@ -38,3 +38,21 @@
 	padding: 20px;
 	text-decoration: none;
 }
+
+@media only screen and (max-width: 590px) {
+	.link-tag {
+		font-size: 1.7rem;
+	}
+	.input::placeholder {
+		font-size: 1.1rem;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.link-tag {
+		font-size: 1.4rem;
+	}
+	.input::placeholder {
+		font-size: .9rem;
+	}
+}

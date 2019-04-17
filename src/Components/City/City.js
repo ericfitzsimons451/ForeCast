@@ -8,8 +8,8 @@ export const City = ({ currentWeather }) => {
 		return (
 			<div className='card'>
 				<h2 className='name'>{currentWeather.city_name}</h2>
-				<h3 className='temperature'>Temperature: {((currentWeather.temp * 9) / 5) + 32} F</h3>
-				<h3>Relative Humidity: {currentWeather.app_temp} %</h3>
+				<h3>Temperature: {((currentWeather.temp * 9) / 5) + 32} F</h3>
+				<h3 className='humidity'>Relative Humidity: {currentWeather.app_temp} %</h3>
 				<h3>Description: {currentWeather.weather.description}</h3>
 				<h3>Cloud Coverage: {currentWeather.clouds} %</h3>
 				<h3>Sunrise: {currentWeather.sunrise}</h3>

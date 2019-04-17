@@ -30,3 +30,9 @@
 	padding: 20px;
 	text-decoration: none;
 }
+
+@media only screen and (max-width: 480px) {
+  .link-home {
+    font-size: 1.5rem;
+  }
+}

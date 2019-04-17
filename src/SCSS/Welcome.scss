@@ -35,3 +35,19 @@
 	padding: 20px;
 	text-decoration: none;
 }
+
+@media only screen and (max-width: 780px) {
+	.welcome-thanks {
+		font-size: 2rem;
+	}
+	.welcome-suggestion {
+		font-size: 1.65rem;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	.link {
+		padding: 15px;
+		font-size: 1.2rem;
+	}
+}
