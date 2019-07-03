@@ -29,6 +29,7 @@
 - connect a disc golf API to search for courses and weather at the same time
 - search by state
 - extended card view with extra metrics
+- clean-up front-end CSS for a more clean look
 
 ## Screenshots
 ### Welcome View
